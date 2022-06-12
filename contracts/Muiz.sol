@@ -17,7 +17,7 @@ contract MuzikToken is ERC20 {
         _mint(to, amount);
     }
 
-    function mint(uint amount) external {
+    function burn(uint amount) external {
         _burn(msg.sender, amount);
     }
 }
